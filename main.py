@@ -4,7 +4,7 @@ def welcome():
     print(' "Крестики-нолики" ')
     print("-------------------")
 
-
+board = list(range(1,10))
 def show_board(board):
     print("-" * 13)
     for i in range(3):
@@ -32,12 +32,12 @@ def player_move(symbol):
                 else:
                     print("Клетка занята!")
             else:
-                print ("Номера клеток от 1 до 9.")
+                print("Номера клеток от 1 до 9.")
         else:
             print("Неправильный ввод.Введите число от 1 до 9.")
 
 welcome()
-board = list(range(1,10))
+
 count = 0
 while True:
     show_board(board)
